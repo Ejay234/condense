@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            {% block style %}
+            .header {
+                display: flex
+                justify-content: center
+            }
+            .alert {
+                margin: 20px;
+                padding: 10px;
+                line-spacing: 2px;
+            }
+            {% endblock %}
+        </style>
+        </title> Condense </title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Condense</h1>
+        <div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
