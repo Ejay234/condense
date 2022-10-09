@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from condense import condenser
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = ('{SECRET_KEY}')
+app.config['SECRET_KEY'] = ('94d6d6b1912135d0bfb6a47bde639076e9bf5eefef318d8b')
 
 condense_sentences = []
 
