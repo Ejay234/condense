@@ -2,14 +2,13 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from condense import condenser
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = ('94d6d6b1912135d0bfb6a47bde639076e9bf5eefef318d8b')
 
 condense_sentences = []
 
 
 @app.route('/index')
 def index():
-    return render_template('templates/index.html', answers=condense_sentences)
+    return render_template('index.html', answers=condense_sentences)
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -23,4 +22,4 @@ def condense():
             condense_sentences.append(item)
             return redirect(url_for('index'))
     else:
-        return render_template('templates/condense.html')
+        return render_template('condense.html')
