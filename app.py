@@ -9,7 +9,7 @@ condense_sentences = []
 
 @app.route('/index')
 def index():
-    return render_template('index.html', answers=condense_sentences)
+    return render_template('templates/index.html', answers=condense_sentences)
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -23,4 +23,4 @@ def condense():
             condense_sentences.append(item)
             return redirect(url_for('index'))
     else:
-        return render_template('condense.html')
+        return render_template('templates/condense.html')
