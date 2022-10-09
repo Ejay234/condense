@@ -1,4 +1,4 @@
-python==3.9.7
+Python==3.9.7
 cohere==2.5.0
 Flask==1.0.2
 gunicorn==20.0.4
