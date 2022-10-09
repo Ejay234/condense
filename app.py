@@ -3,6 +3,7 @@ from condense import condenser
 
 app = Flask(__name__)
 
+
 condense_sentences = []
 
 
