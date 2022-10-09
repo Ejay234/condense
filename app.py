@@ -14,7 +14,7 @@ def index():
 
 @app.route("/", methods=['GET', 'POST'])
 def condense():
-    if request.method == 'POST':
+    if(request.method == 'POST'):
         prompt = request.form['prompt']
         if not prompt:
             flash('Input is required!')
