@@ -1,5 +1,5 @@
 import cohere
-co = cohere.Client('{API_KEY}')
+co = cohere.Client('kvVDmVLdLI3Oumt51Hj9p0h43vaeEUHZzTiL972O')
 
 
 def condenser(text):
