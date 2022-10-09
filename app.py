@@ -12,7 +12,7 @@ def index():
     return render_template('index.html', answers=condense_sentences)
 
 
-@app.route("/", methods=['POST', 'GET'])
+@app.route("/", methods=['GET', 'POST'])
 def condense():
     if request.method == 'POST':
         prompt = request.form['prompt']
